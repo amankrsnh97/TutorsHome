@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>login</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+         
+  <div class="container">
+      
+      <form id="acc">
+        <h3>CREATE ACCOUNT</h3>
+          <input type="text" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <input type="password" placeholder="Confirm Password" required>
+          <div class="btn-box">
+              <button type="button" id="next1">Next</button>
+          </div>
+      </form>
+
+      <form id="soc">
+        <h3>SOCIAL LINKS</h3>
+        <input type="text" placeholder="Facebook" >
+        <input type="text" placeholder="Linkedin" >
+        <input type="text" placeholder="Github" >
+        
+        <div class="btn-box">
+            <button type="button" id="back1">Back</button>
+            <button type="button" id="next2">Next</button>
+        </div>
+    </form>
+
+    <form id="per">
+        <h3>PERSONAL INFO</h3>
+        <input type="text" placeholder="First Name" required >
+        <input type="text" placeholder="Last Name" required >
+        <input type="text" placeholder="Mobile No." required >
+        
+        <div class="btn-box">
+            <button type="button" id="back2">Back</button>
+            <button type="button" id="submit">Submit</button>
+        </div>
+    </form>
+
+    <div class="step-row">
+        <div id="progress"></div>
+        <div class="step-col"><small>Step 1</small></div>
+        <div class="step-col"><small>Step 2</small></div>
+        <div class="step-col"><small>Step 3</small></div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+      var acc = document.getElementById("acc");
+      var soc = document.getElementById("soc");
+      var per = document.getElementById("per");
+
+      var next1 = document.getElementById("next1");
+      var next2 = document.getElementById("next2");
+      var back1 = document.getElementById("back1");
+      var back2 = document.getElementById("back2");
+      var submit = document.getElementById("submit");
+
+      var progress = document.getElementById("progress");
+      
+
+      next1.onclick= function()
+      {   
+          acc.style.left = "-450px";
+          soc.style.left = "40px";
+          progress.style.width = "240px";
+      
+
+      }
+
+      next2.onclick= function()
+      {
+          soc.style.left = "-450px";
+          per.style.left = "40px";
+          progress.style.width = "360px";
+      }
+      back1.onclick= function()
+      {
+          acc.style.left = "40px";
+          soc.style.left = "450px";
+          progress.style.width = "120px";
+      }
+      back2.onclick= function()
+      {
+          soc.style.left = "40px";
+          per.style.left = "450px";
+          progress.style.width = "240px";
+      }
+      submit.onclick= function()
+      {
+          alert("Thank You");  
+      }
+  </script>
+    </body>
+
+</html>
