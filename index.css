@@ -1,0 +1,51 @@
+.nav {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  background-color: rgb(250, 234, 234);
+}
+.nav-left {
+  display: inline;
+  float: left;
+  padding: 2px;
+  width: 25%;
+  margin-top: 12px;
+}
+.nav-left div {
+  display: inline;
+  padding: 4px;
+}
+.nav-middle {
+  display: inline;
+  float: left;
+  width: 50%;
+}
+.nav-middle > div {
+  display: inline;
+  margin: 45%;
+}
+#nav-logo {
+  width: 18%;
+  height: auto;
+}
+.nav-right {
+  display: inline;
+  width: 25%;
+}
+.nav-right,
+.nav-right-links,
+.nav-right-links div {
+  display: inline;
+}
+
+.nav-right-links {
+  float: right;
+  margin-top: 12px;
+}
+.nav-right-links div {
+  padding: 4px;
+}
+
+.signup {
+  margin-right: 2px;
+}
