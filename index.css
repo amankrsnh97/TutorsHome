@@ -1,51 +1,94 @@
-.nav {
-  display: inline-block;
+.navbar-brand > img {
+  padding-top: 11px;
+  width: 130px;
+  margin-left: 60px;
+}
+.navbar-brand {
   height: auto;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+}
+.navbar-default {
+  color: #fff;
+  background-color: #2f4f4f;
+  border-color: #000000;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-default .navbar-nav > .dropdown > a .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+.menu-large {
+  position: static !important;
+}
+.megamenu {
+  padding: 20px 0px;
   width: 100%;
-  background-color: rgb(250, 234, 234);
 }
-.nav-left {
-  display: inline;
-  float: left;
-  padding: 2px;
-  width: 25%;
-  margin-top: 12px;
+.megamenu > li > ul {
+  padding: 0;
+  margin: 0;
 }
-.nav-left div {
-  display: inline;
-  padding: 4px;
+.megamenu > li > ul > li {
+  list-style: none;
 }
-.nav-middle {
-  display: inline;
-  float: left;
-  width: 50%;
+.megamenu > li > ul > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: normal;
 }
-.nav-middle > div {
-  display: inline;
-  margin: 45%;
+.megamenu > li ul > li > a:hover,
+.megamenu > li ul > li > a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #f5f5f5;
 }
-#nav-logo {
-  width: 18%;
-  height: auto;
+.megamenu.disabled > a,
+.megamenu.disabled > a:hover,
+.megamenu.disabled > a:focus {
+  color: #999999;
 }
-.nav-right {
-  display: inline;
-  width: 25%;
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #00a7e8;
 }
-.nav-right,
-.nav-right-links,
-.nav-right-links div {
-  display: inline;
+.megamenu.disabled > a:hover,
+.megamenu.disabled > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  cursor: not-allowed;
 }
-
-.nav-right-links {
-  float: right;
-  margin-top: 12px;
+.megamenu.dropdown-header {
+  color: #428bca;
+  font-size: 18px;
 }
-.nav-right-links div {
-  padding: 4px;
-}
-
-.signup {
-  margin-right: 2px;
+@media (max-width: 768px) {
+  .megamenu {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .megamenu > li {
+    margin-bottom: 30px;
+  }
+  .megamenu > li:last-child {
+    margin-bottom: 0;
+  }
+  .megamenu.dropdown-header {
+    padding: 3px 15px !important;
+  }
+  .navbar-nav .open .dropdown-menu .dropdown-header {
+    color: #fff;
+  }
 }
