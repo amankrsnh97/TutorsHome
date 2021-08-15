@@ -9,31 +9,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="animation">
-        <h1>Welcome</h1>
+<body">
+    <div class="" id="hideit">
+        <div class="animation">
+            <h1>Welcome</h1>
+        </div>
+    
+        <div class="square">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    
+        <div class="circle">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
     </div>
-
-    <div class="square">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
-
-    <div class="circle">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
-
+    <script>
+        function hideLoadingDiv() 
+        {
+            setTimeout(function(){
+                document.getElementById('hideit').classList.add('hidden');
+            },3000)
+        }
+    </script>
 </body>
 
 </html>
