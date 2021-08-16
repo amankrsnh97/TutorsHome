@@ -1,5 +1,5 @@
 body {
-  margin: 6px;
+  margin: 0;
 }
 .navbar-brand > img {
   position: relative;
@@ -14,8 +14,7 @@ body {
   color: #fff;
   background: rgb(58, 56, 56);
   border-color: #000000;
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 24px 24px 15px 0px rgba(20, 30, 20, 0.2);
+  box-shadow: 10px 10px 15px rgba(20, 30, 20, 0.2);
 }
 .navbar-default .navbar-nav > li > a {
   color: #ffffff;
